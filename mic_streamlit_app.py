@@ -32,7 +32,7 @@ import requests, io
 # ==============================================================================
 
 PARQUET_URL = (
-    "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mic_data.parquet"
+    "https://raw.githubusercontent.com/miguelroap/mic-trade-analyzer/main/mic_data.parquet"
 )
 
 # Paleta coherente con el dashboard HTML
