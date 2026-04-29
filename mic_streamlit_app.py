@@ -54,13 +54,19 @@ st.set_page_config(
 # CSS mínimo para oscurecer el fondo y afinar tipografía
 st.markdown("""
 <style>
-  [data-testid="stAppViewContainer"] { background:#0d1117; }
-  [data-testid="stSidebar"]          { background:#161b22; }
-  [data-testid="stHeader"]           { background:#161b22; border-bottom:1px solid #30363d; }
-  h1,h2,h3,h4 { color:#c9d1d9; }
-  .metric-label { font-size:.7rem !important; }
-  div[data-testid="stMetric"] label { font-size:.72rem; color:#8b949e; }
-  div[data-testid="stMetric"] div[data-testid="stMetricValue"] { font-size:1.4rem; }
+  [data-testid="stAppViewContainer"],
+  [data-testid="stAppViewBlockContainer"],
+  section.main, .block-container { background:#0d1117 !important; }
+  [data-testid="stSidebar"]      { background:#161b22 !important; }
+  [data-testid="stHeader"]       { background:#161b22 !important; border-bottom:1px solid #30363d; }
+  h1,h2,h3,h4,p,label           { color:#c9d1d9 !important; }
+  .stPlotlyChart                 { background:#161b22 !important; border-radius:8px; padding:8px; }
+  div[data-testid="stMetric"]    { background:#161b22; border:1px solid #30363d; border-radius:8px; padding:12px; }
+  div[data-testid="stMetric"] label { font-size:.72rem; color:#8b949e !important; }
+  div[data-testid="stMetric"] div[data-testid="stMetricValue"] { font-size:1.4rem; color:#c9d1d9 !important; }
+  div[data-testid="stMetricDelta"] { font-size:.8rem; }
+  .stDataFrame                   { background:#161b22 !important; }
+  .stSelectbox label, .stTextInput label { color:#8b949e !important; font-size:.8rem; }
 </style>
 """, unsafe_allow_html=True)
 
